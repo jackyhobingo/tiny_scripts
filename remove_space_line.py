@@ -1,8 +1,8 @@
 input_file = "input.txt"
 output_file = "output.txt"
 
-output = open(output_file, "w")
-with open(input_file) as fin:
+output = open(output_file, "w", encoding="utf-8")
+with open(input_file, encoding="utf-8") as fin:
 	for line in fin.readlines():
 		if line.strip():
 			output.write(line)
